@@ -1,0 +1,47 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+}
+header {
+  padding: 20px;
+}
+nav {
+  margin: 10px;
+}
+nav button {
+  background: #222;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+}
+nav button:hover {
+  background: #333;
+}
+main {
+  padding: 20px;
+}
+.shayari {
+  background: #1a1a1a;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+.hidden {
+  display: none;
+}
+footer {
+  padding: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
