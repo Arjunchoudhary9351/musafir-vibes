@@ -3,73 +3,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Musafir Vibes</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    .category-btns {
+      margin: 20px 0;
+    }
+    .category-btns button {
+      background-color: #222;
+      color: #fff;
+      border: none;
+      margin: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .shayari-box {
+      background-color: #222;
+      padding: 15px;
+      margin: 10px auto;
+      max-width: 600px;
+      border-radius: 8px;
+    }
+    a {
+      color: #ccc;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Musafir Vibes</h1>
-    <p>Dil se likhi Shayari, har Musafir ke liye...</p>
-    <audio autoplay loop>
-      <source src="lofi.mp3" type="audio/mpeg" />
-    </audio>
-  </header>
+  <h1>Musafir Vibes</h1>
+  <p>Dil se likhi Shayari, har Musafir ke liye...</p>
 
-  <nav>
-    <button onclick="showCategory('love')">Love</button>
-    <button onclick="showCategory('dard')">Dard</button>
-    <button onclick="showCategory('alone')">Alone</button>
-    <button onclick="showCategory('musafir')">Musafir</button>
-  </nav>
+  <div class="category-btns">
+    <button>Love</button>
+    <button>Dard</button>
+    <button>Alone</button>
+    <button>Musafir</button>
+  </div>
 
-  <main>
-    <section id="love" class="category">
-      <h2>Love Shayari</h2>
-      <div class="shayari">तेरी यादों में ही हर शाम बीत जाती है,<br>हर एक मुलाकात अधूरी सी रह जाती है।</div>
-      <div class="shayari">मोहब्बत में वफ़ा ढूँढना भी इक धोखा है,<br>यहां तो लोग मतलब से इश्क करते हैं।</div>
-      <div class="shayari">तेरी मुस्कान ही मेरी जान है,<br>वरना हम भी क्या चीज़ हैं ज़माने में।</div>
-      <div class="shayari">दिल टूटता है तो आवाज़ नहीं होती,<br>हर दर्द की अपनी एक दास्तां होती है।</div>
-    </section>
+  <h2>Love Shayari</h2>
 
-    <section id="dard" class="category hidden">
-      <h2>Dard Bhari Shayari</h2>
-      <div class="shayari">हर मुसाफ़िर की एक अधूरी कहानी होती है,<br>कुछ आंखों में बारिश, कुछ लबों पे खामोशी होती है।</div>
-      <div class="shayari">दर्द वो नहीं जो आंखों से बह जाए,<br>दर्द वो है जो दिल में रह जाए।</div>
-      <div class="shayari">कभी-कभी खामोशियां भी चिल्ला उठती हैं,<br>जब दर्द हद से गुजर जाता है।</div>
-      <div class="shayari">टूटे हुए ख्वाबों की तासीर ही अलग होती है,<br>हर मुस्कान में कहीं न कहीं तन्हाई होती है।</div>
-      <div class="shayari">जिसे भी चाहा दिल से, उसी ने तोड़ा सबसे पहले।</div>
-    </section>
-
-    <section id="alone" class="category hidden">
-      <h2>Alone Shayari</h2>
-      <div class="shayari">तन्हा चलने की अब आदत सी हो गई है,<br>लोग साथ तो देते हैं, मगर वक़्त के साथ छोड़ देते हैं।</div>
-      <div class="shayari">ना कोई पास है, ना कोई आवाज़,<br>बस एक सन्नाटा है और अधूरी सी बात।</div>
-      <div class="shayari">जो अपने थे, वो आज अजनबी लगते हैं,<br>शायद मैं ही बदल गया हूं या वो बदल गए।</div>
-      <div class="shayari">हर कोई पूछता है खुश हो ना?<br>अब किसको समझाऊं, ये मुस्कान तो बस एक आदत है।</div>
-    </section>
-
-    <section id="musafir" class="category hidden">
-      <h2>Musafir Shayari</h2>
-      <div class="shayari">मुसाफ़िर हूं मैं, ठहर जाऊं तो सफर कौन करेगा,<br>टूट कर चाहूं, फिर बिछड़ने का जिगर कौन करेगा।</div>
-      <div class="shayari">रास्तों का क्या है, हर मोड़ पर धोखा है,<br>मंज़िलों ने तो कभी किसी का साथ नहीं दिया।</div>
-      <div class="shayari">चलते रहना ही तो नाम है जिंदगी का,<br>जो रुक जाए, वो तो किस्सा बन जाता है।</div>
-      <div class="shayari">हर मोड़ पर कुछ लोग मिलते हैं,<br>कुछ याद बन जाते हैं, कुछ सबक।</div>
-      <div class="shayari">मुसाफ़िर था, हूं और रहूंगा,<br>किसी एक जगह की चाह नहीं है अब।</div>
-    </section>
-  </main>
+  <div class="shayari-box">तेरी यादों में ही हर शाम बीत जाती है, हर एक मुलाकात अधूरी सी रह जाती है।</div>
+  <div class="shayari-box">मोहब्बत में वफ़ा ढूँढना भी इक धोखा है, यहां तो लोग मतलब से इश्क़ करते हैं।</div>
+  <div class="shayari-box">तेरी मुस्कान ही मेरी जान है, वरना हम भी क्या चीज़ हैं ज़माने में।</div>
+  <div class="shayari-box">दिल टूटता है तो आवाज़ नहीं होती, हर दर्द की अपनी एक दास्तां होती है।</div>
 
   <footer>
-    <p>
-  Follow on Instagram: 
-  <a href="https://www.instagram.com/_musafir._ajju" target="_blank" style="color: #ccc; text-decoration: none;">
-    @_musafir._ajju
-  </a>
-    </p>
-    
-    <p>&copy; 2025 Musafir Vibes. All Rights Reserved.</p>
+    <p>Follow on Instagram: <a href="https://www.instagram.com/_musafir._ajju" target="_blank">@_musafir._ajju</a></p>
+    <p>© 2025 Musafir Vibes. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
