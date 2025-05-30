@@ -1,126 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Musafir Vibes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-    body {
-      background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
-      color: #f0f0f0;
-      line-height: 1.6;
-    }
-    header {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 20px;
-      text-align: center;
-      border-bottom: 1px solid #333;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #ff9f9f;
-    }
-    nav {
-      text-align: center;
-      margin: 20px 0;
-    }
-    nav a {
-      color: #ccc;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-    }
-    nav a:hover {
-      color: #ff9f9f;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    .bio {
-      font-size: 1.1rem;
-      font-style: italic;
-      color: #aaa;
-      background: #1c1c1c;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .shayari {
-      background: #222;
-      padding: 20px;
-      margin: 20px 0;
-      border-left: 4px solid #ff9f9f;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musafir Vibes</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            color: #ccc;
+        }
+        .shayari-block {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #444;
+            border-radius: 10px;
+            max-width: 600px;
+            font-size: 1.2em;
+            line-height: 1.6em;
+            box-shadow: 0 0 10px #222;
+        }
+        footer {
+            margin: 40px 0 10px 0;
+            font-size: 0.9em;
+            color: #888;
+        }
+        audio {
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Musafir Vibes</h1>
-  </header>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#shayari">Shayari</a>
-    <a href="#reels">Reels</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="container">
-    <section id="home">
-      <div class="bio">
-        "Main ek musafir hoon, jazbaaton ke safar par... Har alfaaz mera humsafar hai, aur har dard ek nayi kahani. Shayari sirf lafzon ka khel nahi, yeh meri rooh ki awaaz hai..."
-      </div>
-    </section>
-    <section id="shayari">
-      <h2>Shayari</h2>
-      <div class="shayari">
-        "Tere baad har chehra udaas lagta hai,<br>
-        Jaise dil mein koi veerani si basta hai."
-      </div>
-      <div class="shayari">
-        "Musafir hoon, chalte rehna hai,<br>
-        Dard ke is sheher mein bhi jeena hai."
-      </div>
-      <div class="shayari">
-        "Raat bhar tanhaai se baatein hoti rahi,<br>
-        Tere khayalon mein subah bhi kho gayi."
-      </div>
-      <div class="shayari">
-        "Kabhi dil ke kone mein chupke se aansu beh jaate hain,<br>
-        Muskurahat ke peeche kai gham chhup jaate hain."
-      </div>
-      <div class="shayari">
-        "Main likhta hoon dard, log keh jaate hain Shayari,<br>
-        Kaash koi samjhta, yeh meri khamoshi ki gawahi hai."
-      </div>
-    </section>
-    <section id="reels">
-      <h2>Voice Reels</h2>
-      <p>Lo-fi reels coming soon... Follow on Instagram for more:</p>
-      <a href="https://instagram.com/_musafir._ajju" style="color:#ff9f9f">@_musafir._ajju</a>
-    </section>
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>DM on Instagram: <a href="https://instagram.com/_musafir._ajju" style="color:#ff9f9f">@_musafir._ajju</a></p>
-    </section>
-  </div>
-  <footer>
-    &copy; 2025 @_musafir._ajju | Musafir Vibes
-  </footer>
+    <header>Musafir Vibes</header>
+
+    <div class="shayari-block">
+        मुसाफ़िर हूं मैं, ठहर जाऊं तो सफर कौन करेगा।<br>
+        टूट कर चाहूं, फिर बिछड़ने का जिगर कौन करेगा।।
+    </div>
+    <div class="shayari-block">
+        कुछ अधूरी सी बातें, कुछ अधूरे से लोग,<br>
+        बस यही कहानी है मेरी हर रात की।।
+    </div>
+    <div class="shayari-block">
+        दिल तो करता है छोड़ दूं ये सफर,<br>
+        लेकिन फिर ख्याल आता है, मंज़िल अभी बाकी है।।
+    </div>
+
+    <audio controls autoplay loop>
+        <source src="lofi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <footer>
+        Created by @_musafir._ajju | Sad • Lo-fi • Musafir Mood
+    </footer>
 </body>
 </html>
